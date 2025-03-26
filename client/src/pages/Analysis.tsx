@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './Analysis.css';
 
-interface AnalysisParams {
+type AnalysisParams = {
   symbol: string;
-}
+};
 
 const Analysis: React.FC = () => {
-  const { symbol } = useParams<AnalysisParams>();
+  const params = useParams<Record<string, string | undefined>>();
+  const symbol = params.symbol || 'TSLA'; // Default to TSLA if no symbol is provided
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
