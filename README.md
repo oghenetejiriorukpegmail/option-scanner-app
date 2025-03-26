@@ -25,7 +25,44 @@ The Option Scanner App is designed to help retail traders identify trading oppor
 
 ## Getting Started
 
-Instructions for setting up and running the project will be added as development progresses.
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/oghenetejiriorukpegmail/option-scanner-app.git
+   cd option-scanner-app
+   ```
+
+2. Install dependencies:
+   ```
+   npm run install:all
+   ```
+
+### Running the Application
+
+1. Start the application (both frontend and backend):
+   ```
+   npm start
+   ```
+
+   This will start:
+   - Frontend server at http://localhost:3000
+   - Backend server at http://localhost:5000
+
+2. Stop the application:
+   ```
+   npm run stop
+   ```
+
+   On Windows, you can also use:
+   ```
+   npm run stop:windows
+   ```
 
 ## Development Roadmap
 
