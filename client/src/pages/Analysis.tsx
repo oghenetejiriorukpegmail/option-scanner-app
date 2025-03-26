@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './Analysis.css';
 
+// Updated to fix TypeScript error with useParams
 type AnalysisParams = {
   symbol: string;
 };
