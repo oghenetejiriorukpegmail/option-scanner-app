@@ -1,0 +1,179 @@
+.analysis {
+  padding: 20px 0;
+}
+
+.analysis h1 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.analysis.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.analysis-section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.analysis-section h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+/* Price Chart Section */
+.chart-placeholder {
+  height: 300px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7f8c8d;
+}
+
+/* Options Chain Section */
+.table-placeholder {
+  height: 200px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7f8c8d;
+}
+
+/* Technical Indicators Section */
+.indicators-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.indicator {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.indicator h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.indicator p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.indicator-value {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.indicator-value.bullish {
+  background-color: rgba(46, 204, 113, 0.2);
+  color: #27ae60;
+}
+
+.indicator-value.bearish {
+  background-color: rgba(231, 76, 60, 0.2);
+  color: #c0392b;
+}
+
+.indicator-value.neutral {
+  background-color: rgba(52, 152, 219, 0.2);
+  color: #2980b9;
+}
+
+/* Trade Setup Section */
+.setup-type {
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.setup-type h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.setup-type p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.setup-type.bullish {
+  background-color: rgba(46, 204, 113, 0.2);
+}
+
+.setup-type.bearish {
+  background-color: rgba(231, 76, 60, 0.2);
+}
+
+.setup-type.neutral {
+  background-color: rgba(52, 152, 219, 0.2);
+}
+
+.setup-parameters {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.parameter {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.parameter-label {
+  font-weight: bold;
+  color: #2c3e50;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.parameter-value {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .analysis-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .indicators-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .setup-parameters {
+    grid-template-columns: 1fr;
+  }
+}
